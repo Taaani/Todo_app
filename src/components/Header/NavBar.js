@@ -96,6 +96,9 @@ const NavBar = () => {
                 <Link className=" btn btn-info mx-2" to="/mytodo/todo">
                   Todo
                 </Link>
+                <Link className=" btn btn-info mx-2" to="/mytodo/storage">
+                  Storage
+                </Link>
                 <button
                   className="btn btn-outline-dark"
                   onClick={handleLogout}

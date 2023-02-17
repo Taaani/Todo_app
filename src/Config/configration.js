@@ -3,19 +3,20 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore/lite";
+import { getStorage } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDOxFpZDlwF-sUqj2eM9ayvsW44fkYlG7g",
-  authDomain: "mytodo-659dc.firebaseapp.com",
-  projectId: "mytodo-659dc",
-  storageBucket: "mytodo-659dc.appspot.com",
-  messagingSenderId: "589577890096",
-  appId: "1:589577890096:web:d31487a45f3b0e626f80f5",
-  measurementId: "G-EMFWB1GBCK",
+  apiKey: "AIzaSyCgDI2D9idW_yGbU8SyaOqvuL5tRFEB5UM",
+  authDomain: "mytodoapp-8996c.firebaseapp.com",
+  projectId: "mytodoapp-8996c",
+  storageBucket: "mytodoapp-8996c.appspot.com",
+  messagingSenderId: "694287038218",
+  appId: "1:694287038218:web:687fd24c4c0650b5286cf3",
+  measurementId: "G-D7VXVPWGD2"
 };
 
 // Initialize Firebase
@@ -23,4 +24,5 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
 const fireStore = getFirestore(app);
-export { auth, fireStore };
+const storage = getStorage(app)
+export { auth, fireStore, storage };
